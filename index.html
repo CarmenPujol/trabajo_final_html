@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>GameZone</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
   </head>
 
   <body>
@@ -11,7 +15,7 @@
       <div class="logo">Game<span>Zone</span></div>
       <nav class="nav-items">
         <a href="index.html" class="active">Inicio</a>
-        <a href="html/productos.html">Juegos</a>
+        <a href="html/productos.html">Productos</a>
         <a href="html/contacto.html">Contacto</a>
         <a href="html/presupuestos.html">Presupuesto</a>
       </nav>
@@ -21,22 +25,22 @@
       <div class="welcome-text">
         <h1>Bienvenido a <span>GameZone</span></h1>
         <p>Tu mundo de videojuegos y juegos de mesa</p>
-        <button class="btn">Ver Juegos</button>
+        <button class="btn" onclick="location.href='html/productos.html'">Ver Juegos</button>
       </div>
       <div class="welcome-overlay"></div>
       <img src="images/welcome.png" alt="Mesa diferentes juegos" />
     </section>
 
     <section class="categories">
-      <div class="category">
+      <div class="category" onclick="location.href='html/productos.html'">
         <img src="images/icons/console.png" alt="Videojuegos" />
         <h3>Videojuegos</h3>
       </div>
-      <div class="category">
+      <div class="category" onclick="location.href='html/productos.html'">
         <img src="images/icons/dice.png" alt="Juegos de Mesa" />
         <h3>Juegos de Mesa</h3>
       </div>
-      <div class="category">
+      <div class="category" onclick="location.href='html/productos.html'">
         <img src="images/icons/headset.png" alt="Accesorios" />
         <h3>Accesorios</h3>
       </div>
@@ -52,7 +56,10 @@
       </div>
       <div class="card">
         <div class="card-img">
-          <img src="images/cards/kingdomscastles.png" alt="Kingdom and Castles" />
+          <img
+            src="images/cards/kingdomscastles.png"
+            alt="Kingdom and Castles"
+          />
           <div class="overlay"></div>
           <h3>Kingdoms and Castles</h3>
         </div>
@@ -64,8 +71,76 @@
           <h3>Gaming Headset</h3>
         </div>
       </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/islamisteriosa.png" alt="Isla Misteriosa" />
+          <div class="overlay"></div>
+          <h3>Isla Misteriosa</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img
+            src="images/cards/leyendaseldoria.png"
+            alt="Leyendas de Eldoria"
+          />
+          <div class="overlay"></div>
+          <h3>Leyendas de Eldoria</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/stormfall.png" alt="Stormfall" />
+          <div class="overlay"></div>
+          <h3>Stormfall: Kingdoms clash</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/fallenempire.png" alt="Fallen Empire" />
+          <div class="overlay"></div>
+          <h3>The Fallen Empire</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img">
+          <img src="images/cards/controller.png" alt="Bluethooth Controller" />
+          <div class="overlay"></div>
+          <h3>Bluethooth Controller</h3>
+        </div>
+      </div>
     </section>
 
-    <footer>@ 2026 GameZone</footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <!--Dirección-->
+        <div class="footer-info">
+          <p>📍 Calle Gamer 123, Sevilla, España</p>
+        </div>
+
+        <!--Links legales-->
+        <div class="footer-links">
+          <a href="html/aviso_legal.html">Aviso Legal</a>
+          <a href="html/privacidad.html">Política de Privacidad</a>
+        </div>
+
+        <!--Redes sociales-->
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/social/facebook.png" alt="Facebook" />
+          </a>
+
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/social/twitter.png" alt="Twitter" />
+          </a>
+
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/social/instagram.png" alt="Instagram" />
+          </a>
+        </div>
+      </div>
+      <!-- copy -->
+      <p class="footer-copy">© 2026 GameZone</p>
+    </footer>
   </body>
 </html>

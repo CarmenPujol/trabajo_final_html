@@ -9,11 +9,10 @@ body {
   background: #0b1220;
   color: #fff;
   display: flex;
-  flex-direction: column; /* apila header, main y footer verticalmente */
-  min-height: 100vh;      /* altura mínima = altura de la pantalla */
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
-
 
 .navbar {
   position: relative;
@@ -198,7 +197,6 @@ body {
 /* CARDS */
 
 .cards {
-flex: 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
@@ -229,12 +227,10 @@ flex: 1;
 
 .card-img img {
   width: 100%;
-  height:250px;
+  height: 350px;
   object-fit: cover;
   display: block;
-
 }
-
 
 .overlay {
   position: absolute;
@@ -246,7 +242,6 @@ flex: 1;
   opacity: 0;
   transition: 0.3s;
 }
-
 
 .card-img:hover .overlay {
   opacity: 1;
@@ -275,6 +270,16 @@ flex: 1;
   border-radius: 6px;
 }
 
+.check-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.check-container input {
+  width: auto;
+  margin: 0;
+}
 .form-container button {
   width: 100%;
   margin-top: 10px;
@@ -301,9 +306,73 @@ flex: 1;
 
 /* FOOTER */
 
-footer {
-  text-align: center;
-  padding: 20px;
+.footer {
+  margin-top: auto;
   background: #0d1629;
-  color: #777;
+  padding: 25px 40px;
+  color: #aaa;
+}
+
+/* CONTENIDO PRINCIPAL */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+/* DIRECCIÓN */
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+/* LINKS LEGALES */
+.footer-links {
+  text-align: center; /* 👈 esto lo centra PERFECTO */
+}
+
+.footer-links a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #3aa0ff;
+  text-shadow: 0 0 6px #3aa0ff;
+}
+
+/* REDES SOCIALES */
+.footer-social {
+  justify-content: flex-end;
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.footer-social img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #3aa0ff);
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #666;
 }

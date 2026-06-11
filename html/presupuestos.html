@@ -2,7 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Productos</title>
+    <title>Presupuesto</title>
     <link rel="stylesheet" href="../styles/styles.css" />
     <link
       rel="apple-touch-icon"
@@ -35,18 +35,18 @@
       </nav>
     </header>
 
-    <div class="form-container">
+    <form class="form-container">
       <h2>Solicita tu Presupuesto</h2>
-      <input type="text" placeholder="Nombre" />
-      <input type="email" placeholder="Email" />
-      <input type="tel" placeholder="Telefono" />
-      <textarea placeholder="Mensaje"></textarea>
+      <input type="text" placeholder="Nombre" required/>
+      <input type="email" placeholder="Email" required/>
+      <input type="tel" placeholder="Telefono" required/>
+      <textarea placeholder="Mensaje" required></textarea>
       <div class="check-container">
-        <input type="checkbox" id="privacy" />
+        <input type="checkbox" id="privacy" required/>
         <label for="privacy" class="lbl">Acepto la Politica de Privacidad</label>
       </div>
       <button class="btn">Enviar</button>
-    </div>
+    </form>
 
     <footer class="footer">
       <div class="footer-content">

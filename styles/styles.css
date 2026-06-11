@@ -251,78 +251,62 @@ body {
   opacity: 1;
 }
 
+/* PRODUCTOS */
 
-/* CARRUSEL */
-.carousel-container {
-  position: relative;
-}
-
-.carousel-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.carousel {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+.categoria-productos {
   padding: 20px 40px;
 }
 
-.carousel::-webkit-scrollbar {
-  display: none;
+.categoria-productos h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
 }
 
-/* GRUPOS (pantallas) */
-.group {
+.productos-grid {
   display: flex;
-  gap: 20px;
-  min-width: 100%;
-  justify-content: center;
-  padding: 20px;
-  scroll-snap-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: left;
 }
 
+.producto-card {
+  width: 260px;
+  flex: 0 0 260px;
+  transition: transform 0.3s ease;
+}
 
-.prod img {
+.producto-img {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.producto-img img {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  border-radius: 10px;
-  transition: 0.3s;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 
-.prod:hover img {
+.producto-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.producto-card:hover {
+  transform: translateY(-5px);
+}
+
+.producto-card:hover img {
   transform: scale(1.05);
 }
 
-.prod p {
-  margin-top: 8px;
-  color: #ccc;
-}
-
-/* FLECHAS */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  text-decoration: none;
+.producto-card:hover h3 {
   color: white;
-  background: rgba(0,0,0,0.5);
-  padding: 10px;
-  border-radius: 50%;
-  z-index: 10;
 }
 
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
-}
 /* FORM */
 
 .form-container {
@@ -368,14 +352,20 @@ body {
 .contact-info {
   flex: 1;
 }
-
 .map {
-  flex: 1;
-  background: #222;
-  height: 300px;
+  width: 500px;
+  height: 400px;
   border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 
+.map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
 /* FOOTER */
 
 .footer {

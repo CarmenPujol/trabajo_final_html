@@ -2,13 +2,13 @@
 <html lang="es">
   
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>GameZone</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
   </head>
 
   <body>
@@ -32,91 +32,133 @@
         <button class="btn" onclick="location.href='html/productos.html'">Ver Juegos</button>
       </div>
       <div class="welcome-overlay"></div>
-      <img src="images/welcome.png" alt="Mesa diferentes juegos" />
+      <img src="images/welcome.png" alt="Mesa diferentes juegos" width="500" height="500">
     </section>
 
     <section class="categories">
       <div class="category" onclick="location.href='html/productos.html'">
-        <img src="images/icons/console.png" alt="Videojuegos" />
+        <img src="images/icons/console.png" alt="Videojuegos" width="300" height="300">
 
         <h2>Videojuegos</h2>
       </div>
       <div class="category" onclick="location.href='html/productos.html'">
-        <img src="images/icons/dice.png" alt="Juegos de Mesa" />
+        <img src="images/icons/dice.png" alt="Juegos de Mesa" width="300" height="300">
         <h2>Juegos de Mesa</h2>
       </div>
       <div class="category" onclick="location.href='html/productos.html'">
-        <img src="images/icons/headset.png" alt="Accesorios" />
+        <img src="images/icons/headset.png" alt="Accesorios" width="300" height="300">
         <h2>Accesorios</h2>
       </div>
     </section>
     
-<!--CARDS OBJETOS-->
-    <section class="cards">
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/cyberquest.png" alt="Cyber Quest" />
-          <div class="overlay"></div>
+<!--SECCIÓN DE CARRUSEL-->
+    <section class="carrusel-section">
+  <h2>Novedades</h2>
+
+  <div class="carrusel-container">
+
+    <a href="#novedades-1" class="arrow left">❮</a>
+
+    <div class="carrusel">
+
+      <div class="carrusel-page" id="novedades-1">
+
+        <div class="card">
+          <img src="images/cards/cyberquest.png" alt="Cyber Quest" width="100" height="180">
           <h3>Cyber Quest</h3>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img
-            src="images/cards/kingdomscastles.png"
-            alt="Kingdom and Castles"
-          />
-          <div class="overlay"></div>
-          <h3>Kingdoms and Castles</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/headset.png" alt="Gaming Headset" />
-          <div class="overlay"></div>
-          <h3>Gaming Headset</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/islamisteriosa.png" alt="Isla Misteriosa" />
-          <div class="overlay"></div>
-          <h3>Isla Misteriosa</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img
-            src="images/cards/leyendaseldoria.png"
-            alt="Leyendas de Eldoria"
-          />
-          <div class="overlay"></div>
+
+        <div class="card">
+          <img src="images/cards/leyendaseldoria.png" alt="Leyendas eldoria" width="100" height="180">
           <h3>Leyendas de Eldoria</h3>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/stormfall.png" alt="Stormfall" />
-          <div class="overlay"></div>
-          <h3>Stormfall: Kingdoms clash</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/fallenempire.png" alt="Fallen Empire" />
-          <div class="overlay"></div>
-          <h3>The Fallen Empire</h3>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-img">
-          <img src="images/cards/controller.png" alt="Bluethooth Controller" />
-          <div class="overlay"></div>
-          <h3>Bluethooth Controller</h3>
-        </div>
-      </div>
-    </section>
 
+        <div class="card">
+          <img src="images/cards/headset.png" alt="Headset Gamer" width="100" height="180">
+          <h3>Headset Gamer</h3>
+        </div>
+
+      </div>
+
+      <div class="carrusel-page" id="novedades-2">
+
+        <div class="card">
+          <img src="images/cards/desastre.png" alt="Que desastre" width="100" height="180">
+          <h3>¡Qué desastre!</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/islalumina.png" alt="Isla Lumina" width="100" height="180">
+          <h3>Isla Lumina</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/islamisteriosa.png" alt="Isla misteriosa" width="100" height="180">
+          <h3>La Isla Misteriosa</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="#novedades-2" class="arrow right">❯</a>
+
+  </div>
+</section>
+
+<section class="carrusel-section">
+  <h2>Productos destacados</h2>
+
+  <div class="carrusel-container">
+
+    <a href="#productos-destacados-1" class="arrow left">❮</a>
+
+    <div class="carrusel">
+
+      <div class="carrusel-page" id="productos-destacados-1">
+
+        <div class="card">
+          <img src="images/cards/fallenempire.png" alt="Fallen Empire" width="100" height="180">
+          <h3>Fallen Empire</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/stormfall.png" alt="Stormfall" width="100" height="180">
+          <h3>Stormfall</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/islalumina.png" alt="Isla Lumina" width="100" height="180">
+          <h3>Isla Lumina</h3>
+        </div>
+
+      </div>
+
+      <div class="carrusel-page" id="productos-destacados-2">
+
+        <div class="card">
+          <img src="images/cards/controller.png" alt="Bluetooth Controller" width="100" height="180">
+          <h3>Bluetooth Controller</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/monitor.png" alt="Monitor 27 pulgadas" width="100" height="180">
+          <h3>Monitor 27 pulgadas</h3>
+        </div>
+
+        <div class="card">
+          <img src="images/cards/neon.png" alt="Neon Runners" width="100" height="180">
+          <h3>Neon Runners</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="#productos-destacados-2" class="arrow right">❯</a>
+
+  </div>
+</section>
 
 <!--FOOTER-->
     <footer class="footer">
@@ -135,15 +177,15 @@
         <!--Redes sociales-->
         <div class="footer-social">
           <a href="https://facebook.com" target="_blank">
-            <img src="images/social/facebook.png" alt="Facebook" />
+            <img src="images/social/facebook.png" alt="Facebook">
           </a>
 
           <a href="https://twitter.com" target="_blank">
-            <img src="images/social/twitter.png" alt="Twitter" />
+            <img src="images/social/twitter.png" alt="Twitter">
           </a>
 
           <a href="https://instagram.com" target="_blank">
-            <img src="images/social/instagram.png" alt="Instagram" />
+            <img src="images/social/instagram.png" alt="Instagram">
           </a>
         </div>
       </div>
